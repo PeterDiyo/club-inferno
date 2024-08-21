@@ -1,73 +1,90 @@
-/* MEMBERS SECTION */
+/* Members Section */
 .members-section {
   padding: 4rem 2rem;
-  background-color: #f3f3f3;
-  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .members-title {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #030712;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
-.members-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
+/* Members Container */
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
+/* Member Card */
 .member-card {
   background: #fff;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.333% - 2rem);
+  transition: transform 0.3s ease;
 }
 
 .member-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-.member-icon {
-  font-size: 3rem;
-  color: #030712;
-  margin-bottom: 1rem;
+.member-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 3px solid #030712;
 }
 
 .member-name {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
-  color: #222;
+  color: #030712;
+  margin-bottom: 0.5rem;
 }
 
 .member-role {
   font-size: 1rem;
-  color: #666;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.member-description {
+  font-size: 0.875rem;
+  color: #777;
+  line-height: 1.6;
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .member-card {
+    width: calc(50% - 2rem);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .member-card {
-    max-width: 100%;
-    padding: 1.5rem;
+    width: calc(100% - 2rem);
   }
+}
 
+@media screen and (max-width: 480px) {
   .members-title {
     font-size: 2rem;
   }
 
-  .member-name {
-    font-size: 1.25rem;
+  .member-card {
+    width: 100%;
   }
 
-  .member-role {
+  .member-description {
     font-size: 0.875rem;
   }
 }
