@@ -2,12 +2,12 @@ import { nanoid } from "nanoid";
 import { FaComputer } from "react-icons/fa6";
 
 export const links = [
-  { id: nanoid(), href: "#home", text: "home" },
-  { id: nanoid(), href: "#about", text: "about" },
-  { id: nanoid(), href: "#mission", text: "mission" },
-  { id: nanoid(), href: "#responsibilities", text: "responsibilities" },
-  { id: nanoid(), href: "#timeline", text: "timeline" },
-  { id: nanoid(), href: "#members", text: "members" },
+  { id: nanoid(), href: "#", text: "Home" },
+  { id: nanoid(), href: "#about", text: "About" },
+  { id: nanoid(), href: "#mission", text: "Mission" },
+  { id: nanoid(), href: "#responsibilities", text: "Responsibilities" },
+  { id: nanoid(), href: "#timeline", text: "Timeline" },
+  { id: nanoid(), href: "#members", text: "Members" },
 ];
 
 export const intro = [

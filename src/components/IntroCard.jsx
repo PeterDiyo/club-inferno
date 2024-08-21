@@ -1,6 +1,8 @@
+import React from "react";
+
 const IntroCard = ({ icon, title, text }) => {
   return (
-    <article>
+    <article className="intro-card">
       <span>{icon}</span>
       <div className="intro-card-text">
         <h4 className="title">{title}</h4>
@@ -9,4 +11,5 @@ const IntroCard = ({ icon, title, text }) => {
     </article>
   );
 };
+
 export default IntroCard;

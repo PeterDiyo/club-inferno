@@ -4,7 +4,7 @@ import aboutSvg from "../assets/aboutSvg.svg";
 const About = () => {
   return (
     <section className="about-section" id="about">
-      <h2 className="about-title">About Us</h2>
+      <h2 className="about-title">ABOUT US</h2>
       <div className="about-grid">
         <img src={aboutSvg} className="about-image" alt="About" />
         <article>
